@@ -2,10 +2,10 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$port = 3387; // change to the port you want to check
+$port = 80; // change to the port you want to check
 
 // execute lsof command to check for port
-exec("lsof -i :$port", $output, $return_value);
+exec("lsof -i :$port -t", $output, $return_value);
 
 if ($return_value === 0) {
     // port is in use
