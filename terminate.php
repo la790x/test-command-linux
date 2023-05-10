@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__.'vendor/autoload.php';
+
 $port = 3387; // change to the port you want to check
 
 // execute lsof command to check for port
