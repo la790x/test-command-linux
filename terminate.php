@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$port = 80; // change to the port you want to check
+$port = 3387; // change to the port you want to check
 
 // execute lsof command to check for port
 exec("lsof -i :$port -t", $output, $return_value);
