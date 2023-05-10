@@ -9,7 +9,7 @@ if ($return_value === 0) {
     // port is in use
     echo "Port $port is in use." . PHP_EOL;
     // output the result of the command
-    echo implode("\n", $output) . PHP_EOL;
+    dump($port);
   } else {
     // port is not in use
     echo "Port $port is not in use." . PHP_EOL;
