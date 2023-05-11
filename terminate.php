@@ -3,7 +3,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 $logMessage = "This is a log message.";
-$logFile = "/var/www/reverse-ssh-mmonitoring/storage/logs/crontab.log";
+$logFile = "crontab.log";
 $logMessage = date("Y-m-d H:i:s") . " - " . $logMessage . PHP_EOL;
 // Write the log message to the file
 file_put_contents($logFile, $logMessage, FILE_APPEND);
