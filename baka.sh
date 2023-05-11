@@ -9,4 +9,4 @@ logMessage="$(date "+%Y-%m-%d %H:%M:%S") - $logMessage"
 # Write the log message to the file
 echo "$logMessage" >> "$logFile"
 
-php /home/ubuntu/try-n-error/test-command-linux/terminate.php
+/usr/bin/php /home/ubuntu/try-n-error/test-command-linux/terminate.php
