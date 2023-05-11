@@ -2,12 +2,12 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+$port = 3387;
 $logMessage = "This is a log message.";
 $logFile = "crontab.log";
-$logMessage = date("Y-m-d H:i:s") . " - " . $logMessage . PHP_EOL;
+$logMessage = date("Y-m-d H:i:s") . " - " . $port . PHP_EOL;
 // Write the log message to the file
 file_put_contents($logFile, $logMessage, FILE_APPEND);
-$port = 3387;
 exec("lsof -i :$port -t", $output, $returnValue);
 if ($returnValue === 0) {
     if (is_array($output)) {
